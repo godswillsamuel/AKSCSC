@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,700&display=swap');
+
+:root {
+    --orange: #ff7f07;
+    --green: rgb(2, 68, 2);
+    --white: #FFF;
+    --box-shadow: 0 .5rem 5rem rgba(91, 212, 20, 0.281);
+}
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+.subheading {
+    text-align: center;
+    color: var(--orange);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background: #EEE;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFF;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+
+}
+
+header .logo {
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 3.5rem;
+    color: var(--orange);
+    
+}
+
+header .navbar a:hover {
+    color: #FFF;
+    background: var(--orange);
+}
+
+header .icons {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4, 5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--orange);
+    border-radius: 50%;
+    background: #EEE;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+header .icons #bars {
+    display: none;
+}
+
+.about .container .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 9rem;
+}
+
+.about .container .slide .content {
+    flex: 1 1 45rem;
+}
+
+.about .container .slide .image {
+    flex: 1 1 45rem;
+}
+
+.about .container .slide .image img {
+    width: 50%;
+}
+
+.about .container .slide .content span {
+    color: var(--orange);
+    font-size: 3.5rem;
+}
+
+.about .container .slide .content h3 {
+    color: var(--green);
+    font-size: 7rem;
+}
+
+.about .container .slide .content p {
+    color: var(--orange);
+    font-size: 2rem;
+    padding: 5rem 0;
+}
+
+.News-image {
+    width: 20%;
+}
+
+.News .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+
+.News .box-container .box {
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: 1px var(--orange);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.news-h1 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: var(--orange);
+}
+
+.news-h3 {
+    line-height: 3.5rem;
+    font-size: 2rem;
+    color: var(--green);
+}
+
+.news-h4 {
+    font-size: 1.5rem;
+    color: var(--green);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white);
+    background: var(--orange);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 1rem .5rem;
+}
+
+.btn:hover {
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
+.about .row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    line-height: 3rem;
+}
+
+.about .row h3 {
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-heading{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--orange);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+
+.sotm-image{
+    width: 300px;
+    height: 430px;
+    border-radius: 10%;
+}
+.sotm-text{
+    width: 550px;
+    font-size: 2rem;
+    color: var(--green);
+}
+.Main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+       
+}
+.sotm-text-h3{
+    color: var(--orange);
+    padding-bottom: 1rem;
+    
+    
+}
+.sotm-text-h3-p{
+    font-size: 1.7rem;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box h3{
+    padding: 5rem 0;
+    font-size: 2.5rem;
+    color: var(--orange);
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--green)
+}
+
+
+.footer .box-container .box a:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: 1px solid rgba(91, 212, 20, 0.281);
+    font-size: 2rem;
+    color: var(--orange);
+    padding: 3rem ;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--green)
+}
+
+h4{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    header .icons #bars {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #FFF;
+        border-top: 1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar .active {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        background: #EEE;
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 50%;
+    }
+
+}

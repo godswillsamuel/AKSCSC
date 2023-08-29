@@ -1,0 +1,227 @@
+:root {
+    --orange: #ff7f07;
+    --green: rgb(2, 68, 2);
+    --white: #FFF;
+    --box-shadow: 0 .5rem 5rem rgba(91, 212, 20, 0.281);
+}
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+section {
+    padding: 2rem 9%;
+}
+
+.subheading {
+    text-align: center;
+    color: var(--orange);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+
+section:nth-child(even) {
+    background: #EEE;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFF;
+    padding: 2rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+
+}
+
+header .logo {
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: bolder;
+    font-size: 2.5rem;
+   
+}
+
+header .navbar a {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--orange);
+    text-align: center;
+    justify-content: center;
+}
+
+header .navbar a:hover {
+    color: #FFF;
+    background: var(--orange);
+}
+
+header .icons {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4, 5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--orange);
+    border-radius: 50%;
+    background: #EEE;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+header .icons #bars {
+    display: none;
+}
+
+#about{
+    background: -webkit-linear-gradient(left,  #bd6e24, #ff7f07);
+    background: linear-gradient(to right, #8ebe1cf8, #aa780dec);
+}
+.about .container .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 9rem;
+
+}
+
+.about .container .slide .content {
+    flex: 1 1 45rem;
+}
+
+.about .container .slide .image {
+    flex: 1 1 60rem;
+    padding-left: 19rem;
+}
+
+.about .container .slide .image img {
+    width: 70%;
+}
+
+.about .container .slide .content span {
+    color: var(--orange);
+    font-size: 4.5rem;
+}
+
+.about .container .slide .content h3 {
+    color: var(--green);
+    font-size: 7rem;
+}
+
+.about .container .slide .content p {
+    color: white;
+    font-size: 2rem;
+    padding: 5rem 0;
+}
+
+
+.sign-in{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: var(--green);
+}
+.sign-in img{
+    height: auto;
+    width: 430px;
+}
+.sign-in-text{
+    width: 550px;
+}
+.Main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+.sign-in-text h2{
+    color: var(--orange);
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.sign-in-text h5{
+    color: var(--orange);
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.sign-in-text p{
+    color: var(--orange);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: var(--orange);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent ;
+    border: 2px solid var(--orange) ;
+    cursor: pointer;
+}
+
+
+
+.footer .credit{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--orange);
+    padding: 3rem ;
+    padding-top: 3.5rem;
+    margin-top: 3.5rem;
+}
+
+.footer .credit span{
+    color: var(--green)
+}
+
+h4{
+    color: var(--green);
+    font-size: 1.5rem;
+}

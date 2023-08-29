@@ -1,0 +1,77 @@
+:root {
+    --orange: #ff7f07;
+    --green: rgb(2, 68, 2);
+    --white: #FFF;
+    --box-shadow: 0 .5rem 5rem rgba(91, 212, 20, 0.281);
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+}
+.dark-theme-variables{
+    --color-background:#181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0 0 0 0.4);
+    --box-shadow : 0 2rem 3rem var(--color-light);
+}
+
+.recent{
+    margin-top: 2rem;
+    background: -webkit-linear-gradient(left,  #bd6e24, #ff7f07);
+    background: linear-gradient(to right, #8ebe1cf8, #aa780dec);
+    
+}
+.recent h2{
+    margin-bottom: 3.8rem;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+.recent table{
+    background: #fff;
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.recent table:hover{
+    box-shadow: none;
+}
+.recent table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid #DDD;
+}
+.recent table tbody tr:last-child td{
+    border: none;
+}
+.show-all{
+    text-align: center;
+    display: block;
+    margin: 3rem 7rem;
+    color: var(--green);
+}
+button{
+    background-color: var(--orange);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent ;
+    border: 2px solid var(--orange) ;
+    cursor: pointer;
+}

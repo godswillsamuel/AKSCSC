@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <title>Admin Log In</title>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Admin_sign_in.css">
+  </head>
+  <body>
+    <form action="dashboard.php">
+      <h1>LOG IN</h1>
+      <div class="icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="formcontainer">
+      <div class="container">
+        <label for="uname"><strong>Username</strong></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><strong>Password</strong></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+      <a href="dashboard.php">
+      <button type="submit"><strong>Login</strong></button>
+      </a>
+    </form>
+  </body>
+</html> 
